@@ -154,12 +154,13 @@ function Products() {
             <hr />
 
             <h2>All Products ({products.length})</h2>
-
-            <input
-                placeholder="Search by name or SKU..."
-                value={search}
-                onChange={(e) => setSearch(e.target.value)}
-            />
+            <div className="search-container">
+                <input
+                    placeholder="Search by name or SKU..."
+                    value={search}
+                    onChange={(e) => setSearch(e.target.value)}
+                />
+            </div>
 
             <table border="1" cellPadding="10" cellSpacing="0">
                 <thead>
